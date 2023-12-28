@@ -5,16 +5,18 @@ import Image from "next/image";
 interface MenuItemProps {
   text: string;
   dropDownMenu: boolean;
-  bgClass?: string;
+  bgColor?: string;
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({
   text = "",
   dropDownMenu = true,
-  bgClass="",
+  bgColor="",
 }) => {
   return (
-    <div className={`group relative cursor-pointer w-fit flex items-center ${bgClass}`}>
+    <div className={`group relative cursor-pointer w-fit flex items-center`}
+    style={{backgroundColor:bgColor}}
+    >
       <div className="text-white text-base font-medium font-jakarta leading-6 grow whitespace-nowrap">
         {text}
       </div>

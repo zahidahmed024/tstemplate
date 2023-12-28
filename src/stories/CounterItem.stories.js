@@ -12,6 +12,6 @@ Base.args = {
   countValue:"195+",
   countText: "Countries Covered" ,
   isLast : false,
-  bgClass:'bg-black'
+  bgColor:'black'
 };
 

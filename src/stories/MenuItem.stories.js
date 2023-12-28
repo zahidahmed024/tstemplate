@@ -11,6 +11,6 @@ export const Base = Template.bind({});
 Base.args = {
   text : "home",
   dropDownMenu : true,
-  bgClass : "bg-black",
+  bgColor : "black",
 };
 

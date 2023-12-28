@@ -5,18 +5,20 @@ interface CounterItemProps {
   countValue: string;
   countText: string;
   isLast?: boolean;
-  bgClass?: string;
+  bgColor?: string;
 }
 
 const CounterItem: React.FC<CounterItemProps> = ({
   countValue="",
   countText="",
   isLast = false,
-  bgClass=""
+  bgColor = ""
 }) => {
   return (
     <>
-      <div className={`items-stretch ${bgClass}  w-fit self-stretch flex justify-between gap-2.5`}>
+      <div className={`items-stretch w-fit self-stretch flex justify-between gap-2.5`}
+      style={{backgroundColor:bgColor}}
+      >
         <div className="text-white text-4xl font-clash font-medium leading-[62px] grow whitespace-nowrap">
           {countValue}
         </div>
