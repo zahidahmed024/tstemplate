@@ -1,5 +1,6 @@
+'use client';
 import React from "react";
-import Button from "./Button";
+import Button from "../Button";
 import ic_discord from "@/assets/icons/discord.png";
 import ic_twitter from "@/assets/icons/twitter.png";
 import ic_facebook from "@/assets/icons/facebook.png";
@@ -17,7 +18,11 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="text-white text-5xl font-semibold leading-[65px] tracking-wider grow shrink basis-auto max-md:max-w-full max-md:text-4xl max-md:leading-[60px]">
           Join the Global Community for the Traders ✌️
         </div>
-        <Button text="Join our Discord" rightIcon={ic_discord} />
+        <Button
+          onClick={() => alert("asdas")}
+          text="Join our Discord"
+          rightIcon={ic_discord}
+        />
       </div>
       <div className="mt-16 mx-8 max-md:max-w-full max-md:mr-2.5 max-md:mt-10">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">

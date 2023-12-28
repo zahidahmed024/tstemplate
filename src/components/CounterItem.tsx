@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import ic_vertical from "@/assets/icons/vertical_divider.png";
-interface CountItemProps {
+interface CounterItemProps {
   countValue: string;
   countText: string;
   isLast?: boolean;
 }
 
-const CountItem: React.FC<CountItemProps> = ({
+const CounterItem: React.FC<CounterItemProps> = ({
   countValue,
   countText,
   isLast = false,
@@ -33,4 +33,4 @@ const CountItem: React.FC<CountItemProps> = ({
   );
 };
 
-export default CountItem;
+export default CounterItem;

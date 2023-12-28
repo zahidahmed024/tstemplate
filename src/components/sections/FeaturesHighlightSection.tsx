@@ -9,52 +9,9 @@ import design3 from "../assets/icons/design3.png";
 import users from "../assets/images/users.png";
 import image_background2 from "../assets/images/image_background2.svg";
 import Image, { StaticImageData } from "next/image";
-interface BoxItemProps {
-  icon?: StaticImageData | string;
-  text1: string;
-  text2: string;
-  className?: string;
-}
+import BoxItem from "../Boxitem";
 
-const BoxItem: React.FC<BoxItemProps> = ({
-  icon = "",
-  text1 = "",
-  text2 = "",
-  className = "",
-}) => {
-  return (
-    <div
-      className={`bg-white ${className} relative flex flex-col mt-5 px-5 py-8 rounded-2xl items-start max-md:pr-5`}
-    >
-      <Image
-        alt="background"
-        src={image_background2}
-        className="absolute top-0 right-0"
-      />
-      <Image
-        alt="icon"
-        src={icon}
-        className="aspect-square object-contain object-center w-[54px] overflow-hidden max-w-full"
-      />
-      <div
-        className={`self-stretch ${
-          className ? "text-white" : "text-gray-900"
-        } text-xl font-semibold font-clash leading-7 tracking-tight mt-8`}
-      >
-        {text1}
-      </div>{" "}
-      <div
-        className={`self-stretch ${
-          className ? "text-white" : "text-gray-900"
-        }  text-opacity-80 font-jakarta text-base leading-7 mt-3`}
-      >
-        {text2}
-      </div>
-    </div>
-  );
-};
-
-const InfoSection1: React.FC = () => {
+const FeaturesHighlightSection: React.FC = () => {
   return (
     <div className="bg-indigo-50 self-stretch flex w-full flex-col items-stretch pl-16 pr-20 py-12 max-md:max-w-full max-md:px-5">
       <div className="mr-5 mt-14 max-md:max-w-full max-md:mr-2.5 max-md:mt-10">
@@ -132,4 +89,4 @@ const InfoSection1: React.FC = () => {
   );
 };
 
-export default InfoSection1;
+export default FeaturesHighlightSection;

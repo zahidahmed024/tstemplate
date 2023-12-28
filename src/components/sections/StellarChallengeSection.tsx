@@ -4,8 +4,9 @@ import ic_star2 from "@/assets/icons/star2.png";
 import ic_design2 from "@/assets/icons/design2.png";
 import ic_design1 from "@/assets/icons/design1.png";
 import Image from "next/image";
-import Button from "./Button";
-export default function InfoSection2() {
+import Button from "../Button";
+
+export default function StellarChallengeSection() {
   return (
     <>
       <Image

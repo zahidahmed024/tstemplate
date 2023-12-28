@@ -1,16 +1,16 @@
-import HeroSection from '@/components/HeroSection'
-import InfoSection1 from '@/components/InfoSection1'
-import InfoSection2 from '@/components/InfoSection2'
-import TextSlider from '@/components/TextSlider'
+import HeroSection from '@/components/sections/HeroSection'
+import FeaturesHighlightSection from '@/components/sections/FeaturesHighlightSection'
+import StellarChallengeSection from '@/components/sections/StellarChallengeSection'
+import StatsSlider from '@/components/sections/StatsSlider'
 import React, { ReactElement } from 'react'
 
 export default function page(): ReactElement {
   return (
     <>
       <HeroSection />
-      <TextSlider />
-      <InfoSection1 />
-      <InfoSection2 />
+      <StatsSlider />
+      <FeaturesHighlightSection />
+      <StellarChallengeSection />
     </>
   )
 }
