@@ -1,5 +1,5 @@
 import React from "react";
-import img_graph from "../assets/images/graphs.png";
+import img_graph from "@/assets/images/graphs.png";
 import ic_star2 from "@/assets/icons/star2.png";
 import ic_design2 from "@/assets/icons/design2.png";
 import ic_design1 from "@/assets/icons/design1.png";
@@ -14,7 +14,7 @@ export default function StellarChallengeSection() {
         src={ic_design1}
         className="aspect-[0.97] object-contain object-center w-[66px] fill-indigo-50 overflow-hidden max-w-full self-end"
       />
-      <div className="justify-between self-center w-full max-w-[1240px] mt-14 max-md:max-w-full md:px-10 sm:px-10 max-md:mt-10">
+      <div className="justify-between self-center w-full max-w-full px-5 mt-14 max-md:max-w-full md:px-10 sm:px-10 max-md:mt-10">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[48%] max-md:w-full max-md:ml-0">
             <div className="flex flex-col my-auto items-start max-md:max-w-full max-md:mt-10">

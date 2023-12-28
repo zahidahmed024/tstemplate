@@ -18,7 +18,7 @@ const BoxItem: React.FC<BoxItemProps> = ({
   }) => {
     return (
       <div
-        className={`bg-white ${className} relative flex flex-col mt-5 px-5 py-8 rounded-2xl items-start max-md:pr-5`}
+        className={`bg-white ${className} relative flex w-fit max-w-96 max-md:max-w-full flex-col mt-5 px-5 py-8 rounded-2xl items-start max-md:pr-5`}
       >
         <Image
           alt="background"

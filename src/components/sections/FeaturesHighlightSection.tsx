@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import ic_commission from "../assets/icons/commission.png";
-import ic_profit from "../assets/icons/profit.png";
-import ic_performance from "../assets/icons/perform.png";
-import ic_timer from "../assets/icons/timer.png";
-import ic_star from "../assets/icons/star.png";
-import design3 from "../assets/icons/design3.png";
-import users from "../assets/images/users.png";
-import image_background2 from "../assets/images/image_background2.svg";
+import ic_commission from "@/assets/icons/commission.png";
+import ic_profit from "../../assets/icons/profit.png";
+import ic_performance from "../../assets/icons/perform.png";
+import ic_timer from "../../assets/icons/timer.png";
+import ic_star from "../../assets/icons/star.png";
+import design3 from "../../assets/icons/design3.png";
+import users from "../../assets/images/users.png";
 import Image, { StaticImageData } from "next/image";
 import BoxItem from "../Boxitem";
 

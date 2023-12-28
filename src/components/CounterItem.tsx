@@ -1,20 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import ic_vertical from "@/assets/icons/vertical_divider.png";
+import ic_vertical from "../assets/icons/vertical_divider.png";
 interface CounterItemProps {
   countValue: string;
   countText: string;
   isLast?: boolean;
+  bgClass?: string;
 }
 
 const CounterItem: React.FC<CounterItemProps> = ({
-  countValue,
-  countText,
+  countValue="",
+  countText="",
   isLast = false,
+  bgClass=""
 }) => {
   return (
     <>
-      <div className="items-stretch self-stretch flex justify-between gap-2.5">
+      <div className={`items-stretch ${bgClass}  w-fit self-stretch flex justify-between gap-2.5`}>
         <div className="text-white text-4xl font-clash font-medium leading-[62px] grow whitespace-nowrap">
           {countValue}
         </div>
