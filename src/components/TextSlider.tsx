@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
+import ic_currency from "../assets/icons/currency.png";
 
 // live stats
 export default function TextSlider() {
@@ -43,21 +45,23 @@ const MarqueeItem = ({ text1 = "", text2 = "", text3 = "", text4 = "" }) => {
   return (
     <div className="flex gap-0 pl-4 pr-1 py-1 border-r-zinc-200 border-r border-solid items-start">
       <div className="self-stretch flex justify-between gap-2 pr-4 items-start">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/73a8c3fbc335b15befd98b066e218b822ec3cc66668c8ccf64f581cdd3130148?apiKey=877f25baca7641bea0898fac94c96e97&"
+        <Image
+          alt="currency"
+          src={ic_currency}
           className="aspect-square object-contain object-center w-[18px] overflow-hidden shrink-0 max-w-full"
         />
-        <div className="text-white text-base font-bold self-stretch grow whitespace-nowrap">
+        <div className="text-white text-base font-bold font-jakarta self-stretch grow whitespace-nowrap">
           {text1}
         </div>
       </div>
-      <div className="text-white text-base font-semibold">{text2}</div>
+      <div className="text-white text-base font-semibold font-jakarta">
+        {text2}
+      </div>
       <div className="items-stretch self-stretch flex justify-between gap-3 pr-2.5">
-        <div className="justify-center text-teal-400 text-base font-medium grow whitespace-nowrap">
+        <div className="justify-center text-teal-400 text-base font-jakarta font-medium grow whitespace-nowrap">
           {text3}
         </div>
-        <div className="justify-center text-teal-400 text-base font-medium grow whitespace-nowrap">
+        <div className="justify-center text-teal-400 text-base  font-jakarta font-medium grow whitespace-nowrap">
           {text4}
         </div>
       </div>
